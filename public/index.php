@@ -24,4 +24,6 @@ $fish->eat();
 echo "<br>";
 $zoo = new Zoo();
 $zoo->add($person1);
+$zoo->add($fish);
+$zoo->add($dog);
 $zoo->feedAnimals();

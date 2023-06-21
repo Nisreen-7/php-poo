@@ -9,7 +9,7 @@ class Zoo
     public Person $guardian;
 
 
-  
+
     public function add(Animal $animal)
     {
 
@@ -31,6 +31,7 @@ class Zoo
             echo "Le {$this->guardian->getLastName()} fait son travail";
         }
         foreach ($this->animals as $item) {
+            $item->getAnimals();
             $item->eat();
 
         }
