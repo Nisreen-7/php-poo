@@ -1,0 +1,15 @@
+{
+    "name": "administrateur/php-poo",
+    "autoload": {
+        "psr-4": {
+            "Administrateur\\PhpPoo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "nisreen",
+            "email": "nisokh7@gmail.com"
+        }
+    ],
+    "require": {}
+}
