@@ -2,8 +2,11 @@
     "name": "administrateur/php-poo",
     "autoload": {
         "psr-4": {
-            "Administrateur\\PhpPoo\\": "src/"
+            "App\\": "src/"
         }
+    },
+    "scripts": {
+        "start": "php -S localhost:8000 -t public"
     },
     "authors": [
         {
@@ -11,5 +14,8 @@
             "email": "nisokh7@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "config": {
+        "process-timeout": 0
+    }
 }
