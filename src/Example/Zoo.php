@@ -4,9 +4,12 @@ namespace App\Example;
 
 class Zoo
 {
+    /**
+     * @var $animal[]
+     */
     private array $animals = [];
     // ça sera un Animal[]
-    public Person $guardian;
+    public ?Person $guardian;
 
 
 
@@ -26,12 +29,13 @@ class Zoo
     {
         if (!$this->guardian) {
             echo "il n \'y a pas de gardien de zoo";
+            return;
 
         } else {
             echo "Le {$this->guardian->getLastName()} fait son travail";
         }
         foreach ($this->animals as $item) {
-            $item->getAnimals();
+
             $item->eat();
 
         }

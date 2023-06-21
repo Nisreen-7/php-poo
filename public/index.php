@@ -8,7 +8,6 @@ require '../vendor/autoload.php';
 
 
 $dog = new Dog("Fido", "Corgi");
-
 $dog->bark();
 echo "<br>";
 $dog->eat();
@@ -26,4 +25,5 @@ $zoo = new Zoo();
 $zoo->add($person1);
 $zoo->add($fish);
 $zoo->add($dog);
+echo "<br>";
 $zoo->feedAnimals();
