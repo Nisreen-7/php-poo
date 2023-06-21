@@ -6,16 +6,17 @@ class Fish extends Animal
 {
     public bool $inWater;
 
-    public function __construct(bool $inWater = "true")
+    public function __construct(bool $inWater = true)
     {
-        $this->inWater = $inWater;
+        parent::__construct("Poisson Memo");
+
 
     }
 
 
     public function swim(string $name)
     {
-        if ($this->inWater == true) {
+        if ($this->inWater) {
             echo "{$this->name} je nage";
 
         } else {
@@ -25,7 +26,7 @@ class Fish extends Animal
     }
     public function breath()
     {
-        if ($this->inWater == true) {
+        if ($this->inWater) {
             parent::breath();
         } else {
             echo "je vais bien";

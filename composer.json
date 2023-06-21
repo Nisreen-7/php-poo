@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
     "name": "administrateur/php-poo",
     "autoload": {
@@ -20,6 +19,3 @@
         "process-timeout": 0
     }
 }
-=======
-
->>>>>>> 7f16d4ba5228daee7e8b977f2f9eb9fbc0260504

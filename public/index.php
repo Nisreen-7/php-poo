@@ -2,6 +2,7 @@
 use App\Example\Dog;
 use App\Example\Fish;
 use App\Example\Person;
+use App\Example\Zoo;
 
 require '../vendor/autoload.php';
 
@@ -17,4 +18,10 @@ $person1 = new Person('khattam', 'nisreen');
 $person2 = new Person('Alassali', 'louna');
 
 $person1->speak($person2);
-$fish=new Fish();
+echo "<br>";
+$fish = new Fish();
+$fish->eat();
+echo "<br>";
+$zoo = new Zoo();
+$zoo->add($person1);
+$zoo->feedAnimals();
